@@ -7,7 +7,7 @@ from langchain.chains import RetrievalQA
 from flask import Flask, jsonify, request
 import requests
 app = Flask(__name__)
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 def chatbotdb(query, server, db, collection ):
     loader = MongodbLoader(
         connection_string=server,
